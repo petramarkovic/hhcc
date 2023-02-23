@@ -1,8 +1,8 @@
 .offers {
-	padding: 120px 0;
-	@media screen and (max-width: $md) {
-        padding: 80px 0 0;
-    }
+	padding: 80px 0;
+	@media screen and (max-width: $sm) {
+		padding: 100px 0;
+	}
 }
 
 .offers__title {
@@ -14,15 +14,57 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 150px 0;
+	padding: 100px 0;
+	@media screen and (max-width: $md) {
+		padding: 50px 0;
+	}
 }
 
 .offers__item {
 	text-align: center;
 	flex: 0 0 calc(33.3333% - 20px);
 	max-width: calc(33.3333% - 20px);
+	background-color: $neutral-dark;
+	box-shadow: rgba($black, 0.1) 0px 10px 50px;
+	border-radius: $radius-xl;
+	padding: 30px;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	@media screen and (max-width: $md) {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
+.offers__item-title {
+	color: $secondary;
+}
+
+.offers__item-text {
+	color: $ternary-light;
+	margin: 20px 0 30px;
+}
+
+.offers__item-desc {
+	display: block;
+	color: $ternary;
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+.offers__item-list {
+	margin: 20px 0;
+}
+
+.offers__item-item {
+	padding: 10px 0;
+	color: $secondary-dimmed;
+}
+
+
 .offers__item-btn {
+	margin-top: auto;
 	display: inline-block;
 }

@@ -2,7 +2,6 @@
     width: 100%;
     padding: 80px 0;
     position: relative;
-    margin-bottom: 160px;
     @media screen and (max-width: $md) {
         padding: 80px 0 0;
     }
@@ -19,11 +18,9 @@
     align-items: center;
     justify-content: flex-start;
     height: 100%;
-    max-width: 550px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    min-height: 800px;
     @media screen and (max-width: $md) {
         max-width: 100%;
         justify-content: flex-start;
@@ -40,7 +37,7 @@
 
 .banner__text {
     text-align: center;
-    color: $secondary;
+    color: $ternary-light;
     margin: 20px 0;
     max-width: 500px;
     font-size: 20px;
@@ -67,28 +64,21 @@
 }
 
 .banner__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: 50px;
+    position: relative;
+    padding-bottom: 56%;
     width: 100%;
-    height: 100%;
-    z-index: 0;
 }
 
 .banner__img {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.6;
     border-radius: $radius-xl;
     filter: drop-shadow(0 10px 30px rgba($black, 0.25));
-    @media screen and (max-width: $sm) {
-        height: 50%;
-        top: auto;
-        bottom: -100px;
-    }
 }
 
 .socials {
