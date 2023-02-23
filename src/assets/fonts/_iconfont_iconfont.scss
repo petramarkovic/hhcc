@@ -1,7 +1,9 @@
 $__iconfont__data: map-merge(if(global_variable_exists('__iconfont__data'), $__iconfont__data, ()), (
 	"iconfont": (
 		"arrow-down": "\ea01",
-		"arrow-up": "\ea02"
+		"arrow-up": "\ea02",
+		"logo": "\ea03",
+		"menu": "\ea04"
 	)
 ));
 

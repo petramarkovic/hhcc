@@ -1,16 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>Document</title>
 </head>
 <body>
-    <span class="arrow-up">fedsfs</span>
-    <div>
-        <p class="iconfont"></p>
-        <p class="iconfont-arrow-down"></p>
-    </div>
+	<header class="header js-header">
+		<div class="wrap">
+			<div class="header__content">
+				<a href="/" class="header__home">
+					<!-- <img class="header__logo" src="logo.svg" alt="HH logo" class="header__logo"> -->
+					happy hour
+				</a>
+				<nav class="nav js-nav">
+					<div class="nav__overlay"></div>
+					<button type="button" class="menu js-menu">
+						<span class="menu__icon"></span>
+					</button>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">Offers</a>
+						</li>
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">Cocktails</a>
+						</li>
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<div class="socials">
+			<ul class="socials__list">
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						<span class="socials__icon">
+							<img src="instagram.svg" alt="Instagram" class="socials__img">
+						</span>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						<span class="socials__icon">
+							<img src="youtube.svg" alt="Youtube" class="socials__img">
+						</span>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						<span class="socials__icon">
+							<img src="tiktok.svg" alt="Tik tok" class="socials__img">
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="banner">
+			<div class="wrap">
+				<div class="banner__content">
+					<div class="banner__bg">
+						<div class="banner__img has-cover js-image" style="background-image: url(banner.png);"></div>
+					</div>
+					<div class="banner__holder">
+						<h1 class="h1 banner__title">Example title large he h he</h1>
+						<p class="text banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, in! Possimus molestias exercitationem voluptatibus earum?</p>
+						<div class="banner__cta">
+							<a href="#" class="btn btn--primary banner__btn">
+								<span class="btn-text">Call to action</span>
+							</a>
+							<a href="#" class="btn btn--secondary banner__btn">
+								<span class="btn-text">Call to action</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offers js-section">
+			<div class="wrap">
+				<div class="offers__content">
+					<h2 class="h2 offers__title">Offers in kfjkd aposdj ihioajho</h2>
+					<div class="offers__col">
+						<div class="offers__item">
+							<h3 class="h3 offers__item-title">title</h3>
+							<p class="text offers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis adipisci voluptates! Quibusdam dolorem enim, dignissimos sapiente aliquam provident facere?</p>
+							<a href="#" class="btn btn--primary offers__item-btn">
+								<span class="btn-text">Read more</span>
+							</a>
+						</div>
+						<div class="offers__item">
+							<h3 class="h3 offers__item-title">title</h3>
+							<p class="text offers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis adipisci voluptates! Quibusdam dolorem enim, dignissimos sapiente aliquam provident facere?</p>
+							<a href="#" class="btn btn--primary offers__item-btn">
+								<span class="btn-text">Read more</span>
+							</a>
+						</div>
+						<div class="offers__item">
+							<h3 class="h3 offers__item-title">title</h3>
+							<p class="text offers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis adipisci voluptates! Quibusdam dolorem enim, dignissimos sapiente aliquam provident facere?</p>
+							<a href="#" class="btn btn--primary offers__item-btn">
+								<span class="btn-text">Read more</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer"></footer>
 </body>
 </html>

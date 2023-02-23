@@ -1,9 +1,50 @@
 // fonts
-// $font-default: 'Montserrat', sans-serif;
+$font-headings: 'Anton', sans-serif;
+$font-default: 'Poppins', sans-serif;
+
+$extra-thin: 200;
+$thin: 300;
+$regular: 400;
+$medium: 500;
+$bold: 600;
+$semibold: 700;
+$extrabold: 800;
+
+$letter-1: -0.01em;
+$letter-5: -0.05em;
 
 // colors
 $white: #fff;
 $black: #000;
+$grey: #211f1f;
+
+$primary: #1c322c;
+$primary-light: #3f6355;
+$secondary: #faf7f0;
+$secondary-light: #fdfcf7;
+$secondary-dimmed: #f0eee5;
+$ternary: #e2d9a5;
+$ternary-light: #f0e9c3;
+
+$complementary-dark: #33221d;
+$complementary-neutral: #80412e;
+$complementary-light: #955744;
+
+$neutral-dark: #1d2120;
+$neutral: #3b4744;
+$neutral-light: #f9f7f4;
 
 // transition
-$transition: 250ms ease-in-out;
+$transition-fast: 250ms ease-in-out;
+$transition-medium: 450ms ease-in-out;
+$transition-slow: 750ms ease-in-out;
+
+// breakpoints
+$lg: 1200px;
+$md: 998px;
+$sm: 768px;
+
+// radius
+$radius-sm: 8px;
+$radius-lg: 14px;
+$radius-xl: 34px;

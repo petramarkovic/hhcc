@@ -1,0 +1,28 @@
+.offers {
+	padding: 120px 0;
+	@media screen and (max-width: $md) {
+        padding: 80px 0 0;
+    }
+}
+
+.offers__title {
+	color: $secondary;
+	text-align: center;
+}
+
+.offers__col {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 150px 0;
+}
+
+.offers__item {
+	text-align: center;
+	flex: 0 0 calc(33.3333% - 20px);
+	max-width: calc(33.3333% - 20px);
+}
+
+.offers__item-btn {
+	display: inline-block;
+}
