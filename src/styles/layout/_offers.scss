@@ -1,7 +1,16 @@
 .offers {
-	padding: 80px 0;
+	// padding: 80px 0;
+	overflow-x: hidden;
+	position: relative;
+	.wrap {
+		margin: 0;
+		max-width: 100%;
+	}
 	@media screen and (max-width: $sm) {
-		padding: 100px 0;
+		padding: 60px 0;
+		.wrap {
+			padding: 0;
+		}
 	}
 }
 
@@ -10,31 +19,74 @@
 	text-align: center;
 }
 
-.offers__col {
+.offers__content {
+	width: 300vw;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 100px 0;
-	@media screen and (max-width: $md) {
-		padding: 50px 0;
+	// padding: 100px 0;
+}
+
+.offers__slide {
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	width: 100vw;
+	height: 80vh;
+	padding: 20vw 10vw;
+	@media screen and (max-width: $sm) {
+		height: 100vh;
 	}
 }
 
-.offers__item {
-	text-align: center;
-	flex: 0 0 calc(33.3333% - 20px);
-	max-width: calc(33.3333% - 20px);
-	background-color: $neutral-dark;
-	box-shadow: rgba($black, 0.1) 0px 10px 50px;
+.offers__svg {
+	position: absolute;
+	top: 10vw;
+	left: 10vw;
+	width: 50vw;
+	.mask {
+		width: 0;
+	}
+	@media screen and (max-width: $sm) {
+		width: 80vw;
+	}
+}
+
+.offers__slide-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80vw;
+	height: 100%;
+	z-index: -1;
 	border-radius: $radius-xl;
-	padding: 30px;
-	opacity: 0.8;
+	overflow: hidden;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($black, 0.5);
+	}
+}
+
+.offers__slide-content {
+	// position: absolute;
+	// z-index: 2;
+	// bottom: 20px;
+	// right: 20px;
+	// padding: 20px;
+	// max-width: 400px;
+	// background-color: rgba($primary, 0.6);
+	// border-radius: $radius-xl;
 	display: flex;
 	flex-direction: column;
-	@media screen and (max-width: $md) {
-		flex: 0 0 100%;
-		max-width: 100%;
-		margin-bottom: 20px;
+	position: relative;
+	z-index: 2;
+	min-height: 50vh;
+	padding: 50px;
+	@media screen and (max-width: $sm) {
+		min-height: 80vh;
 	}
 }
 
@@ -65,6 +117,7 @@
 
 
 .offers__item-btn {
+	margin-left: auto;
 	margin-top: auto;
 	display: inline-block;
 }

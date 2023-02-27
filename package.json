@@ -41,6 +41,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "gsap": "^3.11.4"
+    "gsap": "^3.11.4",
+    "smooth-scrollbar": "^8.8.1"
   }
 }
