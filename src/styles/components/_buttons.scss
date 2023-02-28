@@ -18,7 +18,6 @@ button {
 	border: 1px solid;
 	padding: 10px 30px;
 	cursor: pointer;
-	opacity: 0.9;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -44,7 +43,7 @@ button {
 
 .btn--primary {
 	background-color: $green;
-	color: $primary;
+	color: $primary-dark;
 	border-color: $green;
 	// &::before {
 	// 	background-color: $primary;
@@ -73,11 +72,13 @@ button {
 		top: 13px;
 		left: 20px;
 	}
-	&:hover {
-		width: 170px;
-		.btn-text--hidden {
-			right: 0;
-			opacity: 1;
+	@media screen and (min-width: $md) {
+		&:hover {
+			width: 170px;
+			.btn-text--hidden {
+				right: 0;
+				opacity: 1;
+			}
 		}
 	}
 }

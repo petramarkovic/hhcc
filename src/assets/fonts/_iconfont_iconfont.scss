@@ -1,9 +1,16 @@
 $__iconfont__data: map-merge(if(global_variable_exists('__iconfont__data'), $__iconfont__data, ()), (
 	"iconfont": (
 		"arrow-down": "\ea01",
-		"arrow-up": "\ea02",
-		"logo": "\ea03",
-		"menu": "\ea04"
+		"arrow-right-primary": "\ea02",
+		"arrow-right": "\ea03",
+		"arrow-up": "\ea04",
+		"cocktail": "\ea05",
+		"contact-arrow": "\ea06",
+		"instagram": "\ea07",
+		"logo": "\ea08",
+		"menu": "\ea09",
+		"tiktok": "\ea0a",
+		"youtube": "\ea0b"
 	)
 ));
 

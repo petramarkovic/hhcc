@@ -82,7 +82,7 @@
 		top: 0;
 		right: 0;
 		width: 60vw;
-		background-color: $primary;
+		background-color: $grey;
 		height: 100%;
 		padding: 150px 50px 30px;
 		transition: $transition-medium;
@@ -113,7 +113,6 @@
 	position: relative;
 	transition: $transition-medium;
 	padding-bottom: 3px;
-	opacity: 0.8;
 	&::after {
 		content: '';
 		position: absolute;
@@ -124,11 +123,13 @@
 		background-color: $secondary;
 		transition: $transition-medium;
 	}
-	&:hover {
-		color: $ternary;
-		&::after {
-			width: 100%;
-			background-color: $ternary;
+	@media screen and (min-width: $md) {
+		&:hover {
+			color: $ternary;
+			&::after {
+				width: 100%;
+				background-color: $ternary;
+			}
 		}
 	}
 	@media screen and (max-width: $sm) {

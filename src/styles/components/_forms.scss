@@ -1,0 +1,35 @@
+input, label, textarea {
+	font-family: $font-default;
+	&:focus {
+		outline: 2px solid $green;
+	}
+}
+
+.form {
+	width: 100%;
+}
+
+.input-wrap {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.input {
+	width: 100%;
+	border: 1px solid $ternary;
+	background: transparent;
+	border-radius: $radius-sm;
+	padding: 10px;
+	font-size: 16px;
+	color: $ternary-light;
+}
+
+.label {
+	color: $ternary;
+	margin-bottom: 5px;
+}
+
+.submit {
+	margin: 20px 0 0 auto;
+}

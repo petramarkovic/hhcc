@@ -14,7 +14,7 @@ const gsapAnimations = {
 		// 	} else {
 		// 	}
 		// })
-		this.horizontalScroll();
+		// this.horizontalScroll();
 	},
 
 	horizontalScroll: function() {

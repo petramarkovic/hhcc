@@ -5,6 +5,7 @@ import '../assets/svg/youtube.svg';
 import '../assets/svg/tiktok.svg';
 import '../assets/svg/arrow-right.svg';
 import '../assets/svg/arrow-right-primary.svg';
+import '../assets/svg/contact-arrow.svg';
 import '../assets/images/banner.png';
 import '../assets/images/banner-img.png';
 import '../assets/images/offers-1.png';
