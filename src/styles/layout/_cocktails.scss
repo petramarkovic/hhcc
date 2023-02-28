@@ -39,6 +39,8 @@
 		&:hover {
 			.btn--round {
 				width: 170px;
+				background: $ternary;
+				border-color: $ternary;
 				.btn-text--hidden {
 					right: 0;
 					opacity: 1;
