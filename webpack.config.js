@@ -55,9 +55,14 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Webpack app',
+			title: 'Homepage',
 			filename: path.join(__dirname, "dist", "index.html"),
 			template: path.join(__dirname, "src/html", "index.html")
+		}),
+		new HtmlWebpackPlugin({
+			title: 'Offers',
+			filename: path.join(__dirname, "dist", "offers.html"),
+			template: path.join(__dirname, "src/html", "offers.html")
 		}),
 		new IconfontPlugin({
 			src: 'src/assets/svg',

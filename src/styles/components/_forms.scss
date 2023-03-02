@@ -3,6 +3,13 @@ input, label, textarea {
 	&:focus {
 		outline: 2px solid $green;
 	}
+	&:invalid {
+		border-color: $red;
+		color: $red;
+		&:focus {
+			outline: 2px solid $red;
+		}
+	}
 }
 
 .form {
@@ -28,8 +35,18 @@ input, label, textarea {
 .label {
 	color: $ternary;
 	margin-bottom: 5px;
+	font-weight: $bold;
 }
 
 .submit {
 	margin: 20px 0 0 auto;
+}
+
+.error {
+	.input {
+		border-color: $red;
+	}
+	.label {
+		color: $red;
+	}
 }

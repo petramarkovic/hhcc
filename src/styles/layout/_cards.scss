@@ -22,7 +22,7 @@
 	flex-wrap: wrap;
 	padding: 150px 0 100px;
 	@media screen and (max-width: $sm) {
-		padding: 50px 0;
+		padding: 50px 0 0;
 	}
 }
 
@@ -32,36 +32,33 @@
 	max-width: calc(33.3333% - 20px);
 	display: flex;
 	flex-direction: column;
-	background-color: $primary;
+	// background-color: $primary;
+	border: 1px solid $ternary;
 	padding: 20px 20px 0;
 	border-radius: $radius-xl;
 	box-shadow: rgba($black, 0.15) 0px 48px 100px 0px;
 	transition: $transition-slow;
 	overflow: hidden;
-	&:nth-child(odd) {
-		opacity: $opacity-lg;
-	}
+	opacity: 0;
 	&:nth-child(even) {
 		z-index: 3;
+		transform: translateY(100px);
 	}
 	&:first-of-type {
-		transform: rotate(-5deg) translate(140px, 20px);
+		transform: rotate(-5deg) translate(140px, 100px);
 	}
 	&:last-of-type {
-		transform: rotate(5deg) translate(-140px, 20px);
+		transform: rotate(5deg) translate(-140px, 100px);
 	}
 	@media screen and (max-width: $sm) {
 		flex: 1 1 100%;
 		max-width: 100%;
 		margin-bottom: 30px;
-		&:nth-child(odd) {
-			opacity: 1;
-		}
 		&:first-of-type {
-			transform: none;
+			transform: translate(0, 100px);
 		}
 		&:last-of-type {
-			transform: none;
+			transform: translate(0, 100px);
 		}
 	}
 }
@@ -80,7 +77,7 @@
 .card__item {
 	text-align: center;
 	padding: 10px 0;
-	color: $ternary-light;
+	color: $secondary-dimmed;
 }
 
 .card__img {
@@ -99,4 +96,5 @@
 	position: absolute;
 	bottom: 40px;
 	right: 40px;
+	line-height: 30px;
 }

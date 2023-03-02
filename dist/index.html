@@ -14,11 +14,14 @@
 		<div class="wrap">
 			<div class="header__content">
 				<a href="/" class="header__home">
-					<img src="../../dist/logo.svg" alt="HH logo" class="header__logo">
+					<!-- <img class="header__logo" src="logo.svg" alt="HH logo" class="header__logo"> -->
+					happy hour
 				</a>
 				<nav class="nav js-nav">
+					<div class="nav__overlay"></div>
 					<button type="button" class="menu js-menu">
-						<span class="menu__icon" style="background-image: url(../../dist/menu.svg);"></span>
+						<span class="sr-only">Menu icon</span>
+						<span class="menu__icon"></span>
 					</button>
 					<ul class="nav__list">
 						<li class="nav__item">
@@ -39,8 +42,332 @@
 		</div>
 	</header>
 
-	<main class="main"></main>
+	<main class="main">
 
-	<footer class="footer"></footer>
+		<div class="loader">
+		</div>
+
+		<div class="socials">
+			<ul class="socials__list">
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						<span class="socials__icon">
+							<img src="instagram.svg" alt="Instagram" class="socials__img">
+						</span>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						<span class="socials__icon">
+							<img src="youtube.svg" alt="Youtube" class="socials__img">
+						</span>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						<span class="socials__icon">
+							<img src="tiktok.svg" alt="Tik tok" class="socials__img">
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="banner js-banner">
+			<div class="wrap">
+				<div class="banner__content">
+					<div class="banner__holder">
+						<div class="banner__title-wrap">
+							<h1 class="h1 banner__title ease js-banner-title">Amazing cocktail experience</h1>
+							<img src="doodle-green.svg" alt="svg" class="banner__svg ease js-banner-svg">
+						</div>
+						<p class="text banner__text ease js-banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, in! Possimus molestias exercitationem voluptatibus earum?</p>
+						<div class="banner__cta ease js-banner-cta">
+							<a href="#" class="btn btn--primary banner__btn">
+								<span class="btn-text">Book now</span>
+							</a>
+							<a href="#" class="btn btn--secondary banner__btn">
+								<span class="btn-text">See offers</span>
+							</a>
+						</div>
+						<div class="banner__bg">
+							<div class="banner__img has-cover js-banner-img" style="background-image: url(banner.png);"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cards js-cards">
+			<div class="wrap">
+				<h2 class="h2 cards__title ease js-cards-title">Our offers</h2>
+				<div class="cards__content">
+					<div class="card js-card">
+						<h3 class="h3 card__title">basic</h3>
+						<ul class="card__list">
+							<li class="card__item">kjkjk</li>
+							<li class="card__item">fjiajfa</li>
+							<li class="card__item">jfajfaoeoa</li>
+							<li class="card__item">psjfsaj</li>
+						</ul>
+						<img src="offers-1.png" alt="img" class="card__img">
+						<a href="#" class="btn btn--primary btn--round card__btn">
+							<span class="btn-text">
+								<img src="arrow-right-primary.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</a>
+					</div>
+					<div class="card js-card">
+						<h3 class="h3 card__title">standard</h3>
+						<ul class="card__list">
+							<li class="card__item">kjkjk</li>
+							<li class="card__item">fjiajfa</li>
+							<li class="card__item">jfajfaoeoa</li>
+							<li class="card__item">psjfsaj</li>
+						</ul>
+						<img src="offers-2.png" alt="img" class="card__img">
+						<a href="#" class="btn btn--primary btn--round card__btn">
+							<span class="btn-text">
+								<img src="arrow-right-primary.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</a>
+					</div>
+					<div class="card js-card">
+						<h3 class="h3 card__title">premium</h3>
+						<ul class="card__list">
+							<li class="card__item">kjkjk</li>
+							<li class="card__item">fjiajfa</li>
+							<li class="card__item">jfajfaoeoa</li>
+							<li class="card__item">psjfsaj</li>
+						</ul>
+						<img src="offers-3.png" alt="img" class="card__img">
+						<a href="#" class="btn btn--primary btn--round card__btn">
+							<span class="btn-text">
+								<img src="arrow-right-primary.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cocktails js-cocktails">
+			<div class="wrap">
+				<h2 class="h2 cocktails__title ease js-cocktails-title">Some of the drinks we shake</h2>
+				<!-- <div class="cocktails__content">
+					<div class="cocktails__card">
+						<a href="javascript:;" class="cocktails__link">
+							<div class="cocktails__bg has-cover" style="background-image: url(martini.png);"></div>
+							<span href="#" class="btn btn--primary btn--round cocktails__info-btn">
+								<span class="btn-text">
+									<img src="arrow-right-primary.svg" alt="">
+								</span>
+								<span class="btn-text--hidden">read more</span>
+							</span>
+							<div class="cocktails__info">
+								<h3 class="h3 cocktails__info-title">martini</h3>
+							</div>
+						</a>
+					</div>
+					<div class="cocktails__card">
+						<a href="javascript:;" class="cocktails__link">
+							<div class="cocktails__bg has-cover" style="background-image: url(tom-collins.png);"></div>
+							<span href="#" class="btn btn--primary btn--round cocktails__info-btn">
+								<span class="btn-text">
+									<img src="arrow-right-primary.svg" alt="">
+								</span>
+								<span class="btn-text--hidden">read more</span>
+							</span>
+							<div class="cocktails__info">
+								<h3 class="h3 cocktails__info-title">tom collins</h3>
+							</div>
+						</a>
+					</div>
+					<div class="cocktails__card">
+						<a href="javascript:;" class="cocktails__link">
+							<div class="cocktails__bg has-cover" style="background-image: url(mai-tai.png);"></div>
+							<span href="#" class="btn btn--primary btn--round cocktails__info-btn">
+								<span class="btn-text">
+									<img src="arrow-right-primary.svg" alt="">
+								</span>
+								<span class="btn-text--hidden">read more</span>
+							</span>
+							<div class="cocktails__info">
+								<h3 class="h3 cocktails__info-title">mai tai</h3>
+							</div>
+						</a>
+					</div>
+					<div class="cocktails__card">
+						<a href="javascript:;" class="cocktails__link">
+							<div class="cocktails__bg has-cover" style="background-image: url(bees-knees.png);"></div>
+							<span href="#" class="btn btn--primary btn--round cocktails__info-btn">
+								<span class="btn-text">
+									<img src="arrow-right-primary.svg" alt="">
+								</span>
+								<span class="btn-text--hidden">read more</span>
+							</span>
+							<div class="cocktails__info">
+								<h3 class="h3 cocktails__info-title">bees knees</h3>
+							</div>
+						</a>
+					</div>
+					<div class="cocktails__card">
+						<a href="javascript:;" class="cocktails__link">
+							<div class="cocktails__bg has-cover" style="background-image: url(margarita.png);"></div>
+							<span href="#" class="btn btn--primary btn--round cocktails__info-btn">
+								<span class="btn-text">
+									<img src="arrow-right-primary.svg" alt="">
+								</span>
+								<span class="btn-text--hidden">read more</span>
+							</span>
+							<div class="cocktails__info">
+								<h3 class="h3 cocktails__info-title">margarita</h3>
+							</div>
+						</a>
+					</div>
+					<div class="cocktails__card">
+						<a href="javascript:;" class="cocktails__link">
+							<div class="cocktails__bg has-cover" style="background-image: url(daiquiri.png);"></div>
+							<span href="#" class="btn btn--primary btn--round cocktails__info-btn">
+								<span class="btn-text">
+									<img src="arrow-right-primary.svg" alt="">
+								</span>
+								<span class="btn-text--hidden">read more</span>
+							</span>
+							<div class="cocktails__info">
+								<h3 class="h3 cocktails__info-title">daiquiri</h3>
+							</div>
+						</a>
+					</div>
+				</div> -->
+				<div class="cocktails__holder">
+					<img class="cocktail__img js-cocktail-img" src="martini.png" alt="img">
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="martini.png">
+						<h3 class="h3 cocktail__title">martini</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="daiquiri.png">
+						<h3 class="h3 cocktail__title">daiquiri</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="tom-collins.png">
+						<h3 class="h3 cocktail__title">tom collins</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="margarita.png">
+						<h3 class="h3 cocktail__title">margarita</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="daiquiri.png">
+						<h3 class="h3 cocktail__title">daiquiri</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="bees-knees.png">
+						<h3 class="h3 cocktail__title">bees knees</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="mai-tai.png">
+						<h3 class="h3 cocktail__title">mai tai</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+				</div>
+				<a href="javascript:;" class="btn btn--secondary cocktails__btn">
+					<span class="btn-text">see more</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="wrap">
+				<div class="contact__content">
+					<div class="contact__col">
+						<img src="contact-arrow.svg" alt="arrow" class="contact__img">
+						<h2 class="h2 contact__title">Contact us</h2>
+						<p class="text contact__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex facere, perspiciatis illo sapiente vitae eveniet consequatur distinctio delectus. Laudantium iusto quae explicabo alias quis similique animi. Sunt, cumque asperiores.
+						</p>
+					</div>
+					<div class="contact__col">
+						<form action="/" class="form contact__form">
+							<div class="input-wrap">
+								<label for="name" class="label">name:</label>
+								<input type="text" class="input" id="name" name="name">
+							</div>
+							<div class="input-wrap">
+								<label for="email" class="label">email:</label>
+								<input type="email" class="input" id="email" name="email">
+							</div>
+							<div class="input-wrap">
+								<label for="msg" class="label">message:</label>
+								<textarea cols="9" rows="8" class="input" id="msg" name="msg"></textarea>
+							</div>
+							<button type="submit" class="btn btn--primary submit">submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer__content">
+				<small class="footer__copy">&copy; 2023 | developetra</small>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="javascript" class="footer__link">home</a>
+					</li>
+					<li class="footer__item">
+						<a href="javascript" class="footer__link">offers</a>
+					</li>
+					<li class="footer__item">
+						<a href="javascript" class="footer__link">cocktails</a>
+					</li>
+					<li class="footer__item">
+						<a href="javascript" class="footer__link">contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

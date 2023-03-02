@@ -66,6 +66,11 @@ section {
 	position: relative;
 }
 
+.ease {
+	opacity: 0;
+    transform: translateY(100px);
+}
+
 // .loaded {
 // 	&.banner__content {
 // 		opacity: 1;

@@ -102,3 +102,82 @@
 	width: fit-content;
 	margin: 0 auto;
 }
+
+.cocktails__holder {
+	padding: 100px 0 200px;
+	position: relative;
+	@media screen and (max-width: $sm) {
+		padding: 30px 0;
+	}
+}
+
+.cocktail {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid $ternary;
+	transition: $transition-medium;
+	position: relative;
+	@media screen and (min-width: $md) {
+		&:hover {
+			.btn--round-light {
+				width: auto;
+				background: $ternary;
+				border: none;
+				border-radius: $radius-xl;
+				.btn-text--hidden {
+					right: auto;
+					opacity: 1;
+					color: $primary-dark;
+				}
+			}
+		}
+	}
+}
+
+.cocktail--active {
+	.cocktail__title {
+		color: $ternary;
+	}
+}
+
+.cocktail--inactive {
+	border-bottom: 1px solid #6b6a68;
+	.cocktail__title {
+		color: #6b6a68;
+	}
+	.btn-text--hidden {
+		color: #6b6a68;
+	}
+}
+
+
+.cocktail__title {
+	text-transform: uppercase;
+	color: $secondary-dimmed;
+	transition: $transition-medium;
+}
+
+.cocktail__img {
+	position: absolute;
+	max-width: 250px;
+	top: 25%;
+	left: 40%;
+	transform: rotateY(100deg);
+	transition: 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	opacity: 0;
+    transform-origin: left;
+}
+
+.cocktail__img--active {
+	opacity: 1;
+	transform: rotateY(0);
+	transform-origin: left;
+}
+
+.cocktails__btn-round {
+	@media screen and (max-width: $sm) {
+		padding: 10px 5px 10px 20px;
+	}
+}

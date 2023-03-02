@@ -1,18 +1,19 @@
 $__iconfont__data: map-merge(if(global_variable_exists('__iconfont__data'), $__iconfont__data, ()), (
 	"iconfont": (
 		"arrow-down": "\ea01",
-		"arrow-right-primary": "\ea02",
-		"arrow-right": "\ea03",
-		"arrow-up": "\ea04",
-		"cocktail": "\ea05",
-		"contact-arrow": "\ea06",
-		"doodle-green": "\ea07",
-		"doodle": "\ea08",
-		"instagram": "\ea09",
-		"logo": "\ea0a",
-		"menu": "\ea0b",
-		"tiktok": "\ea0c",
-		"youtube": "\ea0d"
+		"arrow-right-dark": "\ea02",
+		"arrow-right-primary": "\ea03",
+		"arrow-right": "\ea04",
+		"arrow-up": "\ea05",
+		"cocktail": "\ea06",
+		"contact-arrow": "\ea07",
+		"doodle-green": "\ea08",
+		"doodle": "\ea09",
+		"instagram": "\ea0a",
+		"logo": "\ea0b",
+		"menu": "\ea0c",
+		"tiktok": "\ea0d",
+		"youtube": "\ea0e"
 	)
 ));
 

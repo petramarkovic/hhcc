@@ -25,10 +25,10 @@
 					</button>
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="javascript:;" class="nav__link">Home</a>
+							<a href="index.html" class="nav__link">Home</a>
 						</li>
 						<li class="nav__item">
-							<a href="javascript:;" class="nav__link">Offers</a>
+							<a href="offers.html" class="nav__link">Offers</a>
 						</li>
 						<li class="nav__item">
 							<a href="javascript:;" class="nav__link">Cocktails</a>
@@ -43,6 +43,9 @@
 	</header>
 
 	<main class="main">
+
+		<div class="loader">
+		</div>
 
 		<div class="socials">
 			<ul class="socials__list">
@@ -70,92 +73,36 @@
 			</ul>
 		</div>
 
-		<section class="banner">
+		<section class="banner js-banner">
 			<div class="wrap">
 				<div class="banner__content">
 					<div class="banner__holder">
 						<div class="banner__title-wrap">
-							<h1 class="h1 banner__title">Amazing cocktail experience</h1>
-							<img src="doodle-green.svg" alt="svg" class="banner__svg">
+							<h1 class="h1 banner__title ease js-banner-title">Amazing cocktail experience</h1>
+							<img src="doodle-green.svg" alt="svg" class="banner__svg ease js-banner-svg">
 						</div>
-						<p class="text banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, in! Possimus molestias exercitationem voluptatibus earum?</p>
-						<div class="banner__cta">
+						<p class="text banner__text ease js-banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, in! Possimus molestias exercitationem voluptatibus earum?</p>
+						<div class="banner__cta ease js-banner-cta">
 							<a href="#" class="btn btn--primary banner__btn">
 								<span class="btn-text">Book now</span>
 							</a>
-							<a href="#" class="btn btn--secondary banner__btn">
-								<span class="btn-text">See more info</span>
+							<a href="offers.html" class="btn btn--secondary banner__btn">
+								<span class="btn-text">See offers</span>
 							</a>
 						</div>
 						<div class="banner__bg">
-							<div class="banner__img has-cover js-image" style="background-image: url(banner.png);"></div>
+							<div class="banner__img has-cover js-banner-img" style="background-image: url(banner.png);"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- <section class="offers js-section">
+		<section class="cards js-cards">
 			<div class="wrap">
-				<h2 class="h2 offers__title">Offers in kfjkd aposdj ihioajho</h2>
-				<div class="offers__content js-offers-container">
-					<div class="offers__slide js-offers-slide">
-						<div class="offers__slide-content">
-							<h3 class="h3 offers__item-title">title</h3>
-							<p class="text offers__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos doloremque, ipsam nam sed quae cumque quia assumenda consequatur magni numquam.</p>
-							<div class="offers__slide-bg has-cover" style="background-image: url(offers-1.png);"></div>
-							<a href="#" class="btn btn--primary btn--round offers__item-btn">
-								<span class="btn-text">
-									<img src="arrow-right-primary.svg" alt="">
-								</span>
-								<span class="btn-text--hidden">read more</span>
-							</a>
-						</div>
-					</div>
-					<div class="offers__slide js-offers-slide">
-						<div class="offers__slide-content">
-							<h3 class="h3 offers__item-title anim">title</h3>
-							<p class="text offers__item-text anim">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos doloremque, ipsam nam sed quae cumque quia assumenda consequatur magni numquam.</p>
-							<div class="offers__slide-bg has-cover" style="background-image: url(offers-2.png);"></div>
-							<a href="#" class="btn btn--primary btn--round offers__item-btn">
-								<span class="btn-text">
-									<img src="arrow-right-primary.svg" alt="">
-								</span>
-								<span class="btn-text--hidden">read more</span>
-							</a>
-						</div>
-					</div>
-					<div class="offers__slide js-offers-slide">
-						<div class="offers__slide-content">
-							<h3 class="h3 offers__item-title anim">title</h3>
-							<p class="text offers__item-text anim">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos doloremque, ipsam nam sed quae cumque quia assumenda consequatur magni numquam.</p>
-							<div class="offers__slide-bg has-cover" style="background-image: url(offers-3.png);"></div>
-							<a href="#" class="btn btn--primary btn--round offers__item-btn">
-								<span class="btn-text">
-									<img src="arrow-right-primary.svg" alt="">
-								</span>
-								<span class="btn-text--hidden">read more</span>
-							</a>
-						</div>
-					</div>
-					<svg class="offers__svg" viewBox="0 0 900 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z" fill="#D9D9D9"/>
-						<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="10">
-						<path d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z" fill="#e2d9a5"/>
-						</mask>
-						<g mask="url(#mask0_0_1)">
-						<rect class="mask" y="-49" height="99" fill="#6BBF79"/>
-						</g>
-					</svg>
-				</div>
-			</div>
-		</section> -->
-
-		<section class="cards">
-			<div class="wrap">
-				<h2 class="h2 cards__title">Our offers</h2>
+				<h2 class="h2 cards__title ease js-cards-title">Our offers</h2>
 				<div class="cards__content">
-					<div class="card">
+					<div class="card js-card">
 						<h3 class="h3 card__title">basic</h3>
 						<ul class="card__list">
 							<li class="card__item">kjkjk</li>
@@ -171,7 +118,7 @@
 							<span class="btn-text--hidden">read more</span>
 						</a>
 					</div>
-					<div class="card">
+					<div class="card js-card">
 						<h3 class="h3 card__title">standard</h3>
 						<ul class="card__list">
 							<li class="card__item">kjkjk</li>
@@ -187,7 +134,7 @@
 							<span class="btn-text--hidden">read more</span>
 						</a>
 					</div>
-					<div class="card">
+					<div class="card js-card">
 						<h3 class="h3 card__title">premium</h3>
 						<ul class="card__list">
 							<li class="card__item">kjkjk</li>
@@ -207,10 +154,10 @@
 			</div>
 		</section>
 
-		<section class="cocktails">
+		<section class="cocktails js-cocktails">
 			<div class="wrap">
-				<h2 class="h2 cocktails__title">Some of the drinks we shake</h2>
-				<div class="cocktails__content">
+				<h2 class="h2 cocktails__title ease js-cocktails-title">Some of the drinks we shake</h2>
+				<!-- <div class="cocktails__content">
 					<div class="cocktails__card">
 						<a href="javascript:;" class="cocktails__link">
 							<div class="cocktails__bg has-cover" style="background-image: url(martini.png);"></div>
@@ -295,6 +242,72 @@
 							</div>
 						</a>
 					</div>
+				</div> -->
+				<div class="cocktails__holder">
+					<img class="cocktail__img js-cocktail-img" src="martini.png" alt="img">
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="martini.png">
+						<h3 class="h3 cocktail__title">martini</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="daiquiri.png">
+						<h3 class="h3 cocktail__title">daiquiri</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="tom-collins.png">
+						<h3 class="h3 cocktail__title">tom collins</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="margarita.png">
+						<h3 class="h3 cocktail__title">margarita</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="daiquiri.png">
+						<h3 class="h3 cocktail__title">daiquiri</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="bees-knees.png">
+						<h3 class="h3 cocktail__title">bees knees</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
+					<a href="javascript:;" class="cocktail ease js-cocktail" data-img="mai-tai.png">
+						<h3 class="h3 cocktail__title">mai tai</h3>
+						<span href="#" class="btn btn--primary btn--round-light cocktails__btn-round">
+							<span class="btn-text">
+								<img src="arrow-right-dark.svg" alt="">
+							</span>
+							<span class="btn-text--hidden">read more</span>
+						</span>
+					</a>
 				</div>
 				<a href="javascript:;" class="btn btn--secondary cocktails__btn">
 					<span class="btn-text">see more</span>
@@ -307,7 +320,7 @@
 				<div class="contact__content">
 					<div class="contact__col">
 						<img src="contact-arrow.svg" alt="arrow" class="contact__img">
-						<h3 class="h3 contact__title">Contact us</h3>
+						<h2 class="h2 contact__title">Contact us</h2>
 						<p class="text contact__text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex facere, perspiciatis illo sapiente vitae eveniet consequatur distinctio delectus. Laudantium iusto quae explicabo alias quis similique animi. Sunt, cumque asperiores.
 						</p>

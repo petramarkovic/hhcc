@@ -74,6 +74,36 @@ button {
 	}
 }
 
+.btn--round-light {
+	background: transparent;
+	border: none;
+	width: fit-content;
+	height: 100%;
+	border-radius: $radius-xl;
+	.btn-text {
+		position: relative;
+	}
+	.btn-text--hidden {
+		position: relative;
+		color: $secondary-dimmed;
+		opacity: 1;
+		right: auto;
+		top: auto;
+		padding-left: 10px;
+	}
+	@media screen and (min-width: $md) {
+		&:hover {
+			width: auto;
+			background: transparent;
+			border: none;
+			.btn-text--hidden {
+				right: auto;
+				opacity: 1;
+			}
+		}
+	}
+}
+
 .btn-text {
 	position: relative;
 	z-index: 5;
